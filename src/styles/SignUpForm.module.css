@@ -1,0 +1,13 @@
+.Input {
+    text-align: center;
+}
+
+.InageCol {
+    text-align: center;
+}
+
+.Image {
+    max-width: 40vw;
+    border-radius: 50%;
+    height: auto;
+}

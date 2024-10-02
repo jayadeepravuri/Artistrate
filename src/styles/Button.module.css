@@ -1,0 +1,110 @@
+.Button {
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+    border: 1px solid #2142b2;
+    background-color: #2142b2;
+    color: #ffffff;
+    padding: 4px 10px;
+    min-width: 75px;
+    margin: 5px;
+  }
+  
+  .Button:hover {
+    cursor: pointer;
+    border: 1px solid #2142b2;
+    background-color: #ffffff;
+    color: #2142b2;
+  }
+  
+  .Secondary {
+    border-radius: 1.5rem;
+    margin: 0.5rem;
+    padding: 4px 10px;
+    min-width: 75px;
+    margin: 5px;
+    border: 1px solid #2142b2;
+    background-color: #ffffff;
+    color: #2142b2;
+  }
+  
+  .Secondary:hover {
+    cursor: pointer;
+    border: 1px solid #2142b2;
+    background-color: #2142b2;
+    color: #ffffff;
+  }
+  
+  .Blue {
+      background-color: #2142b2;
+      color: #ffffff;
+  }
+  
+  .Blue:hover {
+      border: 1px solid #2142b2;
+      background-color: #ffffff;
+      color: #2142b2;
+    }
+  
+  
+  
+    .FollowBtn {
+      border-radius: 0.7rem;
+      padding: 0;
+      border: none;
+      background-color: #46c55e;
+      color: #ffffff;
+    }
+    
+    .FollowBtn:hover {
+      cursor: pointer;
+      border: 1px solid #46c55e;
+      background-color: #ffffff;
+      color: #46c55e;
+    }
+    
+    .Icon {
+      font-size: 1.3rem;
+      padding: 0.7rem;
+    }
+    
+    .Icon:hover {
+      cursor: pointer;
+      font-size: 1.3rem;
+      padding: 0.7rem;
+    }
+    
+    .UnFollowBtn {
+      border-radius: 0.7rem;
+      padding: 0;
+      border: none;
+      background-color: #CF8562;
+      color: #ffffff;
+    }
+    
+    .UnFollowBtn:hover {
+      cursor: pointer;
+      border: 1px solid #CF8562;
+      background-color: #ffffff;
+      color: #CF8562;
+    }
+  
+    .LocationBtn {
+      border-radius: 1.5rem;
+      padding: 0;
+      margin: 0.1rem;
+      border: 1px solid #CF8562;
+      background-color: #CF8562;
+      color: #ffffff;
+      width: fit-content;
+    }
+    
+    .LocationBtn:hover {
+      cursor: pointer;
+      border: 1px solid #CF8562;
+      background-color: #ffffff;
+      color: #CF8562;
+    }
+  
+    .LocationBtn i {
+      padding-top: 0.7rem;
+    }
