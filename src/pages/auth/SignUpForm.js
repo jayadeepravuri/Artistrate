@@ -11,15 +11,11 @@ import appStyles from "../../App.module.css";
 import btnStyles from "../../styles/Button.module.css";
 import axios from "axios";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom";
-import { useRedirect } from "../../hooks/useRedirect";
 
-/**
- * Generates a sign-up form with username, password1, and password2 fields. Handles form submission and error display.
- *
- * @param {object} e - The event object for form submission
- */
+
+
 const SignUpForm = () => {
-  useRedirect('loggedIn');
+  
   const [signUpData, setSignUpData] = useState({
     username: "",
     password1: "",
@@ -29,11 +25,7 @@ const SignUpForm = () => {
   const [errors, setErrors] = useState({});
   const history = useHistory();
 
-  /**
-   * Handles the change event and updates the sign up data state.
-   *
-   * @param {Event} e - the event object
-   */
+
   const handleChange = (e) => {
     setSignUpData({
       ...signUpData,
@@ -41,12 +33,7 @@ const SignUpForm = () => {
     });
   };
 
-  /**
-   * Handles the form submission asynchronously,
-   * then sends the user to the sign in page.
-   * 
-   * @param {type} e - the event object
-   */
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
@@ -62,6 +49,7 @@ const SignUpForm = () => {
       <Col className="my-auto" md={6}>
         <Container>
           <h1 className={`${appStyles.Handwritten} text-center pb-4`}>Sign up</h1>
+          
           <Form onSubmit={handleSubmit} className="d-flex flex-column">
 
             {/* Username */}

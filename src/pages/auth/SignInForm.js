@@ -12,17 +12,11 @@ import appStyles from "../../App.module.css";
 import { Link, useHistory } from "react-router-dom/cjs/react-router-dom";
 import axios from "axios";
 import { useSetCurrentUser } from "../../contexts/CurrentUserContext";
-import { useRedirect } from "../../hooks/useRedirect";
-import { setTokenTimestamp } from "../../utils/utils";
 
-/**
- * Generate the sign-in form with username and password fields.
- *
- * @param {Event} e - The event triggering the form submission.
- */
+
+
 const SignInForm = () => {
-  const setCurrentUser = useSetCurrentUser();
-  useRedirect('loggedIn');
+const setCurrentUser =useSetCurrentUser();
 
   const [signInData, setSignInData] = useState({
     username: "",
@@ -32,11 +26,7 @@ const SignInForm = () => {
   const [errors, setErrors] = useState({});
   const history = useHistory();
 
-  /**
-   * A function that handles the change event.
-   *
-   * @param {Object} e - the event object
-   */
+ 
   const handleChange = (e) => {
     setSignInData({
       ...signInData,
@@ -44,19 +34,13 @@ const SignInForm = () => {
     });
   };
 
-  /**
-   * Handles form submission, making a POST request to log in the user.
-   *
-   * @param {Event} e - the event object triggering the function
-   * @return {Promise<void>} a Promise that resolves when the submission is handled
-   */
+ 
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const { data } = await axios.post("/dj-rest-auth/login/", signInData);
+      const{ data } = await axios.post("/dj-rest-auth/login/", signInData);
       setCurrentUser(data.user);
-      setTokenTimestamp(data);
-      history.push('/feed');
+      history.push('/');
     } catch (err) {
       setErrors(err.response?.data);
     }
